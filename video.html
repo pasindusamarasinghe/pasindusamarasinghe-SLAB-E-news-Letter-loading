@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading...</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Video Loading Screen -->
+  <div id="videoScreen">
+    <video id="loadingVideo" muted autoplay>
+      <source src="video1.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+  <script>
+    const video = document.getElementById("loadingVideo");
+
+    video.onended = function () {
+      window.location.href = "https://www.slab.lk/";
+    };
+
+    video.play();
+  </script>
+
+</body>
+</html>
